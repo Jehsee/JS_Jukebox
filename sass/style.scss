@@ -1,0 +1,25 @@
+li {
+  &.item1  {
+    // display:none;
+  }
+  &.item2  {
+    // display:none;
+  }
+}
+
+.box  {
+  border: 1px solid black;
+  display: inline-block;
+}
+
+#container  {
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
