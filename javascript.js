@@ -201,7 +201,14 @@ $(document).ready(function() {
   })
 
   $("#forward").click(function() {
-    jukebox.forward()
+    if ($("#desi").hasClass("newClass")) {
+      $("#desi").removeClass("newClass").addClass("oldClass")
+    }
+    else {
+      $("#desi").removeClass("oldClass").addClass("newClass")
+    }
+
+  jukebox.forward()
   })
 
   $("#random").click(function() {

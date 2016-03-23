@@ -3,34 +3,39 @@
 <head>
   <title>Javascript Jukebox!</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script type="text/javascript" src="javascript.js"></script>
 </head>
 <body>
 <div id="container">
   <div class="box" id="playBox">
-    <h3>Now Playing</h3>
+    <h1>Now Playing</h1>
       <ul>
         <li id="title">Title: </li>
         <li id="artist">Artist: </li>
       </ul>
     <div id="timer">Timer:</div>
-
-    <button id="play" type="button">Play</button>
-    <button id="pause" type="button">||</button>
-    <button id="back" type="button"><<</button>
-    <button id="forward" type="button">>></button>
-    <button id="random" type="button">random</button>
+      <div id="buttons">
+        <button id="play" type="button">Play</button>
+        <button id="pause" type="button">||</button>
+        <button id="back" type="button"><<</button>
+        <button id="forward" type="button">>></button>
+        <button id="random" type="button">random</button>
+      </div>
   </div>
 
   <audio id="audiotag" src="song1.mp3" type="audio/mpeg">
   </audio>
 
+    <div id="desi">
+    </div>
+
   <div class="box" id="nextBox">
     <h3>Next song</h3>
       <ul>
-        <li id="nextTitle">Title:</li>
-        <li id="nextArtist">Artist:</li>
+       <li id="nextTitle">Title:</li>
+       <li id="nextArtist">Artist:</li>
       </ul>
   </div>
 

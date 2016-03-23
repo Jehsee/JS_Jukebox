@@ -1,16 +1,115 @@
+li.item1 {
+  display: none; }
+li.item2 {
+  display: none; }
+
 .box {
-  border: 1px solid black;
+  border: 1px solid azure;
   display: inline-block; }
 
 #container {
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid black;
   position: absolute;
   top: 0px;
   left: 0px;
+  bottom: 0px;
+  width: 100%; }
+
+#queueBox {
+  border-radius: 5%;
+  float: left;
+  color: azure;
+  width: 200px;
+  height: 150px; }
+  #queueBox h3 {
+    padding-left: 5px; }
+
+#playBox {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: azure;
+  border-radius: 10px;
+  width: 400px;
+  height: 200px;
+  background-color: rgba(14, 112, 145, 0.5); }
+  #playBox ul {
+    position: relative;
+    left: 25%; }
+  #playBox h1 {
+    text-align: center; }
+  #playBox div {
+    text-align: center; }
+  #playBox #timer {
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%); }
+
+#nextBox {
+  border-radius: 5px;
+  position: absolute;
   right: 0px;
-  bottom: 0px; }
+  top: 0px;
+  color: azure;
+  width: 200px;
+  height: 150px; }
+  #nextBox h3 {
+    padding-left: 5px; }
+
+.movingBox_start {
+  border-radius: 5px;
+  border: 1px solid red;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 200px;
+  height: 150px; }
+
+@keyframes testing {
+  from {
+    border-radius: 5px;
+    border: 1px solid red;
+    position: absolute;
+    right: 15px;
+    top: 0px;
+    width: 200px;
+    height: 150px; }
+  to {
+    border-radius: 10px;
+    border: 1px solid azure;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    width: 400px;
+    height: 200px; } }
+.newClass {
+  animation: testing 2s ease; }
+
+@keyframes jesse {
+  from {
+    border-radius: 5px;
+    border: 1px solid red;
+    position: absolute;
+    right: 15px;
+    top: 0px;
+    width: 200px;
+    height: 150px; }
+  to {
+    border-radius: 10px;
+    border: 1px solid azure;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    width: 400px;
+    height: 200px; } }
+.oldClass {
+  animation: jesse 2s ease; }
 
 /*# sourceMappingURL=style.css.map */
